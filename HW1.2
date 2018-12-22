@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a;
+    cin>> a;
+    if (a <= 70){
+       cout<< a*350; 
+    }
+    else if (a <= 100){
+        cout<< 70*350 + (a - 70)*500;
+    }
+    else if (a <= 450){
+        cout<< 70*350 + 30*500 + (a - 100)*770;
+    }
+    else if (a  > 450){
+        cout<< 70*350 + 30*500 + (a - 450)*840;
+    }
+
+    return 0;
+}
