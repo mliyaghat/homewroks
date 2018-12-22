@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int q, mt, t;
+    cin>> q;
+    cin>> mt;
+    cin>> t;
+    int u = 10*q/100 + 30*mt/100 + 60*t/100;
+    switch(u){
+        case 18:case 19:case 20:
+            cout<< "bseiar khoob!";
+            break;
+        case 15:case 16:case 17:
+            cout<< "khoob";
+            break;
+        case 12: case 13: case 14:
+            cout<< "motevaset";
+            break;
+        default:
+            cout<< "zaeef";
+            break;
+    }
+
+    return 0;
+}
