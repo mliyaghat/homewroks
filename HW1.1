@@ -1,0 +1,29 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c;
+    cin>> a;
+    cin>> b;
+    cin>> c;
+    if (a==0 && b==0){
+        cout<< "no answer";
+    }
+    else if (a == 0){
+        cout<< -1 * (c/b);
+    }
+    else if (b*b - 4*a*c == 0){
+        cout<< "no answer";
+    }
+    else{
+        float u = (int)sqrt(b*b - 4*a*c);
+        cout<< (-b - u) / (2*a)<<endl;
+        cout<< (-b + u) / (2*a);
+    }
+
+    return 0;
+    
+}
